@@ -1,6 +1,7 @@
 import '../styles/home.css';
 import useGlobalReducer from "../hooks/useGlobalReducer.jsx";
-import Card from "../components/Card.jsx";
+
+import View from '../components/View.jsx';
 
 
 export const Home = () => {
@@ -12,7 +13,8 @@ export const Home = () => {
 		
 		<div className="home">
 
-			<Card/>
+			
+			<View/>
 
 		</div>
 		
