@@ -1,3 +1,6 @@
-registro del trabajo.
+footer ok
 
-ya tengo la Card diseñada y pocicionada
+navbar a medio hacer pero ok
+
+minuto 16 de la video de ejemplo.
+

@@ -7,14 +7,12 @@ const Navbar = () => {
 
 
     <header>
-
       <nav>
 
-      <a href="" className= "active"> Favorites </a>
+      <button className= "btn_fav"> Favorites </button>
 
       </nav>
 
-     
     </header>
     
   );
