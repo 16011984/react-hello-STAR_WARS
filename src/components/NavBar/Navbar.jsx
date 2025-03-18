@@ -1,17 +1,22 @@
 import { Link } from "react-router-dom";
-import '../styles/navbar.css';
+import './navbar.css';
 
 const Navbar = () => {
 
   return (
 
 
-    <nav className="nav">
+    <header>
+
+      <nav>
 
       <a href="" className= "active"> Favorites </a>
-      
+
+      </nav>
+
      
-    </nav>
+    </header>
+    
   );
 };
 

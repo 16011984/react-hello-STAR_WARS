@@ -1,6 +1,6 @@
 import { Outlet } from "react-router-dom/dist"
 import ScrollToTop from "../components/ScrollToTop"
-import Navbar  from "../components/Navbar"
+import Navbar  from "../components/NavBar/Navbar"
 import Footer from "../components/Footer/Footer"
 
 
