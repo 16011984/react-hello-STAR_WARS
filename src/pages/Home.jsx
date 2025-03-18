@@ -8,8 +8,16 @@ export const Home = () => {
 
     return (
 
+        <div className="carrousel">
 
-        <CharacterView />
+            <div className='list'>
+
+                <div className='item' style={(backgroung-image: url() )}
+
+                <CharacterView />
+
+            </div>
+        </div>
 
 
     );
