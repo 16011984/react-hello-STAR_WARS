@@ -1,6 +1,6 @@
 
 /*CARACTERISTICAS DE LA CARTA*/
-.card {
+.pl_card {
     width: 150px;
     height: 220px;
     position: absolute;
@@ -11,13 +11,14 @@
     box-shadow: 0 10px 30px white;
     background-position: 50% 50%;
     background-size: cover;
-    z-index: 100;
+    z-index: 200;
     transition: 1s;
+    background: greenyellow;
 
 }
 
 /*IMAGEN DE LA CARTA (para que se alinee y ce centre la imagen)*/
-.card img{
+.pl_card img{
    width: 100%;
    height: 100%;
    object-fit: cover;
@@ -25,5 +26,3 @@
    
    
 }
-
-

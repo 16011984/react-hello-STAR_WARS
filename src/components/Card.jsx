@@ -2,6 +2,7 @@ import '../styles/card.css';
 import { useEffect } from "react";
 
 
+
 const Card = () => {
 
     return (

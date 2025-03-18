@@ -1,6 +1,6 @@
 
 /*CARACTERISTICAS DE LA CARTA*/
-.card {
+.vc_card {
     width: 150px;
     height: 220px;
     position: absolute;
@@ -17,7 +17,7 @@
 }
 
 /*IMAGEN DE LA CARTA (para que se alinee y ce centre la imagen)*/
-.card img{
+.vc_card img{
    width: 100%;
    height: 100%;
    object-fit: cover;
@@ -25,5 +25,3 @@
    
    
 }
-
-

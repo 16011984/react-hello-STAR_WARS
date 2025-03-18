@@ -7,4 +7,5 @@ Footer{
     width: 100%;
     height: 100px;
     background-color: rgb(182, 97, 219);
+    z-index: 1500;
 }

@@ -1,22 +1,18 @@
 import '../styles/home.css';
-import useGlobalReducer from "../hooks/useGlobalReducer.jsx";
+import CharacterView from '../components/Character/CharacterView';
 
-import View from '../components/View.jsx';
 
 
 export const Home = () => {
 
-  const {store, dispatch} =useGlobalReducer()
+
+    return (
 
 
-	return (
-		
-		<div className="home">
+        <CharacterView />
 
-			
-			<View/>
 
-		</div>
-		
-	);
-}; 
+    );
+};
+
+export default Home;

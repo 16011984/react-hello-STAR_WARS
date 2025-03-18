@@ -1,7 +1,7 @@
 
-.view-container {
+.pl_viewcontainer {
 
-    background: rgb(3, 255, 150);
+    background: rgb(41, 132, 94);
     border-radius: 5px;
     margin-top: 150px;
     width: 90%;
@@ -11,6 +11,6 @@
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 900;
+    z-index: 800;
 }
 

@@ -6,7 +6,9 @@ const Navbar = () => {
   return (
 
 
-    <nav className="navbar">
+    <nav className="nav">
+
+      <a href="" className= "active"> Favorites </a>
       
      
     </nav>
