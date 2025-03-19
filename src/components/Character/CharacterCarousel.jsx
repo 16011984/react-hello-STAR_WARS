@@ -63,8 +63,9 @@ const CharacterView = () => {
                 <div
                     className="item"
                     style={{
-                        backgroundImage: "uhttps://raw.githubusercontent.com/16011984/react-hello-STAR_WARS/refs/heads/master/src/assets/img/R2D2.jpg')"
+                        backgroundImage: "url('https://raw.githubusercontent.com/16011984/react-hello-STAR_WARS/refs/heads/master/src/assets/img/R2D2.jpg')"
                     }} >
+
                     <div className="content">
 
                         <div className='name'> R2D2 </div>
@@ -75,7 +76,9 @@ const CharacterView = () => {
                             <button> Add to Favorites </button>
                             <button> Read More </button>
                         </div>
+
                     </div>
+
                 </div>
 
                 <div
@@ -83,6 +86,7 @@ const CharacterView = () => {
                     style={{
                         backgroundImage: "url('https://raw.githubusercontent.com/16011984/react-hello-STAR_WARS/refs/heads/master/src/assets/img/vader.jpg')"
                     }} >
+
                     <div className="content">
 
                         <div className='name'> Darth Vader </div>
@@ -93,9 +97,15 @@ const CharacterView = () => {
                             <button> Add to Favorites </button>
                             <button> Read More </button>
                         </div>
+
                     </div>
 
 
+                    <div className='arrows'>
+                        <button> &lt; </button>
+                        <button> &gt; </button>
+
+                    </div>
 
                 </div>
             </div>
