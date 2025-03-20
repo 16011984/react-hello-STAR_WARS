@@ -99,17 +99,22 @@ const CharacterView = () => {
                         </div>
 
                     </div>
-
+                </div>/
+                
+                    / ----NEXT----PREV----BUTTONS----//
 
                     <div className='arrows'>
                         <button> &lt; </button>
                         <button> &gt; </button>
+                    </div>
+
+                    // ----TIME----RUNNING---- //
+
+                    <div className='timeRunning'>
 
                     </div>
 
-                </div>
             </div>
-
         </div>
     )
 };
