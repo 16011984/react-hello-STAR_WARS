@@ -61,7 +61,7 @@
   text-align: left;
   color: white;
   background: transparent;
-  
+  display: none;
 }
 
 .list .item:nth-child(1) .content{
@@ -152,29 +152,30 @@
 
 .arrows{
     position: absolute;
-    top: 90%;
+    top: 85%;
     right: 350%;
     z-index: 100;
-    width: 300px;
-    max-width: 30%;
+    width: 400px;
+    max-width: 70%;
     display: flex;
     gap: 15px;
     align-items: center;
     
-
+    
 }
 .arrows button{
-    width: 50px;
+    width: 70px;
     height: 50px;
     border-radius: 50%;
     background-color: rgb(99, 255, 27);
     border: none;
     outline: none;
     color: black;
+    font-size:32px;
+    font-family: monospace;
     display: flex;
     align-items: center; 
-    font-size: 18px;
-    font-family: monospace;
+    justify-content: center;
     font-weight: bold;
     transition: .5s;
     cursor: pointer;
