@@ -223,25 +223,25 @@
   }
 
   .content .btn {
-    display: flex; 
-    flex-direction: row; 
-    gap: 3px; 
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
     justify-content: center;
     margin-left: -220px;
-}
-.content .btn button {
-  
-  text-align: center;
-  font-weight: bold;
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  cursor: pointer;
-  font-size: 11px;
-  background: white;
-  color: black;
-  border: 3px solid rgb(99, 255, 27);
-  padding: 1px; 
+  }
+  .content .btn button {
+    text-align: center;
+    font-weight: bold;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 11px;
+    background: white;
+    color: black;
+    border: 3px solid rgb(99, 255, 27);
+    padding: 1px;
+  }
 }
 
 /*------RESPONSIVE----PAGE----*/

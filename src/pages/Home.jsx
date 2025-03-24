@@ -1,4 +1,5 @@
 import '../styles/home.css';
+import  '../components/Character/Character.js';
 import CharacterView from '../components/Character/CharacterCarousel';
 
 
