@@ -2,7 +2,9 @@
 .carousel {
   width: 100vw;
   height: 100vh;
-  margin-top: 0px;
+  left: 0%;
+  top: 0px;
+  margin-bottom: 5%;
   overflow: hidden;
   position: relative;
 }
@@ -143,23 +145,24 @@
 
 /*--------BOTONES----NEXT-----PREV-----*/
 
-.arrows {
-  position: absolute;
-  top: 85%;
-  right: 25%;
-  z-index: 100;
-  width: 250px;
-  max-width: 30%;
-  display: flex;
-  gap: 15px;
-  align-items: center;
+.btn-group{
+
+  position: relative;
+  left: 50%;
+  z-index: 101;
+  width: 120px;
+  max-width: 50%;
+  gap: 15%;
 }
-.arrows button {
+
+.carousel-control-prev,
+.carousel-control-next{
+
+  transform: translateY(-250%);
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-color: rgb(99, 255, 27);
-  color: black;
+  background-color: white;
   border: none;
   outline: none;
   font-size: 16px;
@@ -167,10 +170,11 @@
   font-weight: bold;
   transition: 0.5s;
   cursor: pointer;
-}
-.arrows button:hover {
+ 
+} 
+.btn button:hover {
   background-color: white;
-  color: black;
+
 }
 
 /*--------BOTONES----NEXT-----PREV-----*/

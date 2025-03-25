@@ -1,17 +1,25 @@
 import '../styles/home.css';
-import  '../components/Character/Character.js';
-import CharacterView from '../components/Character/CharacterCarousel';
+import CharacterCarousel from '../components/Character/CharacterCarousel';
 
 
 
 export const Home = () => {
 
-    return (
+  return (
 
-        <div className='content'>
-          <CharacterView />
-        </div>
-    );
+    <div className='content'>
+
+      
+        <CharacterCarousel />
+    
+        <CharacterCarousel />
+     
+        <CharacterCarousel />
+     
+      
+
+    </div>
+  );
 };
 
 export default Home;

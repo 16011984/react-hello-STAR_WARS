@@ -1,7 +1,7 @@
 import './charactercarousel.css'
 import CharacterCard from './CharacterCard';
 
-const CharacterView = () => {
+const CharacterCarousel = () => {
 
     return (
 
@@ -122,4 +122,4 @@ const CharacterView = () => {
 
 
 
-export default CharacterView;
+export default CharacterCarousel;

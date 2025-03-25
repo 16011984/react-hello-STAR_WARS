@@ -5,6 +5,7 @@ import { RouterProvider } from "react-router-dom";  // Import RouterProvider to 
 import { router } from "./routes";  // Import the router configuration
 import { StoreProvider } from './hooks/useGlobalReducer';  // Import the StoreProvider for global 
 import Home from './pages/Home';
+import Navbar from './components/NavBar/Navbar';
 
 
 const Main = () => {
@@ -14,7 +15,8 @@ const Main = () => {
             <StoreProvider> 
    
                 <RouterProvider router={router}>
-                     
+                    
+                    <Navbar/>
                     <Home/>
                     
                 </RouterProvider>

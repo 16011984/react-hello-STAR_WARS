@@ -7,6 +7,7 @@ const Navbar = () => {
 
 
     <header>
+      
       <nav>
 
       <button className= "btn_fav"> Favorites </button>
