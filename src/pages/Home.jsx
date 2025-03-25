@@ -9,14 +9,10 @@ export const Home = () => {
 
     <div className='content'>
 
-      
+
         <CharacterCarousel />
     
-        <CharacterCarousel />
-     
-        <CharacterCarousel />
-     
-      
+        
 
     </div>
   );

@@ -1,12 +1,13 @@
 import './charactercarousel.css'
-import CharacterCard from './CharacterCard';
+import React from 'react';
+import './Arrows';
+
 
 const CharacterCarousel = () => {
 
     return (
 
         <div className="carousel">
-
 
             <div className="list">
 
@@ -100,20 +101,22 @@ const CharacterCarousel = () => {
 
                     </div>
                 </div>/
+
+
+
+                / ----NEXT----PREV----BUTTONS----//
+
+                <div className='arrows'>
+                    <button class="prev"> ← </button>
+                    <button class="next"> → </button>
+                    <div />
+                </div>
+
+                // ----TIME----RUNNING---- //
+
+                    <div className='timeRunning'></div>
+
                 
-                    / ----NEXT----PREV----BUTTONS----//
-
-                    <div className='arrows'>
-                        <button> &lt; </button>
-                        <button> &gt; </button>
-                    </div>
-
-                    // ----TIME----RUNNING---- //
-
-                    <div className='timeRunning'>
-
-                    </div>
-
             </div>
         </div>
     )
