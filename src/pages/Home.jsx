@@ -3,19 +3,18 @@ import CharacterCarousel from '../components/Character/CharacterCarousel';
 
 
 
-export const Home = () => {
+const Home = () => {
 
-  return (
+return (
 
-    <div className='content'>
-
-
-        <CharacterCarousel />
+  <div className="container">
     
         
+        <CharacterCarousel />
 
-    </div>
-  );
+
+  </div>
+);
 };
 
 export default Home;

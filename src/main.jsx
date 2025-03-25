@@ -6,19 +6,21 @@ import { router } from "./routes";  // Import the router configuration
 import { StoreProvider } from './hooks/useGlobalReducer';  // Import the StoreProvider for global 
 import Home from './pages/Home';
 import Navbar from './components/NavBar/Navbar';
+import Footer from './components/Footer/Footer';
 
 
 const Main = () => {
     return (
-        <React.StrictMode>  
-          
-            <StoreProvider> 
-   
+        <React.StrictMode>
+
+            <StoreProvider>
+
                 <RouterProvider router={router}>
-                    
-                    <Navbar/>
-                    <Home/>
-                    
+
+                    <Navbar />
+                    <Footer />
+                    <Home />
+
                 </RouterProvider>
 
             </StoreProvider>
