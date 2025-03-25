@@ -7,9 +7,8 @@
   margin-bottom: 5%;
   overflow: hidden;
   position: relative;
-  z-index: 80;
-
 }
+
 
 /*-----CARDS------*/
 .carousel .list .item {
@@ -23,34 +22,32 @@
   box-shadow: 0 10px 14px rgba(255, 255, 255, 0.6);
   background-position: 50%, 50%;
   background-size: cover;
-  z-index: 100;
   transition: 1s;
+  
 }
 
 
-.carousel .list .item:nth-child(1) {
+
+.carousel .list .item:nth-child(1)
+.carousel .list .item:nth-child(2) {
   top: 0;
   left: 0;
   transform: translate(0, 0);
   border-radius: 0;
   width: 100%;
   height: 150%;
+  z-index: 150;
+}
 
-}
-.carousel .list .item:nth-child(2){
+.carousel .list .item:nth-child(3){
   left: 72%;
-  scale: .9.9;
 }
-.carousel .list .item:nth-child(3) {
+.carousel .list .item:nth-child(4) {
   left: calc(72% + 200px);
   scale: 1.1;
 }
-.carousel .list .item:nth-child(4) {
+.carousel .list .item:nth-child(n+5) {
   left: calc(72% + 400px);
-}
-
-.carousel .list .item:nth-child(n + 5) {
-  left: calc(72% + 600px);
 }
 
 
@@ -75,54 +72,47 @@
 }
 
 
-.item .content {
-  position: absolute;
-  top: 40%;
-  left: 100px;
-  transform: translateY(-50%);
-  width: 400px;
-  text-align: left;
-  color: white;
-  background: transparent;
-  display: none;
-}
-
-
 .list .item:nth-child(1) .content {
   display: block;
 }
 
-.content .name {
+.item .name {
   background: transparent;
   color: white;
-  font-size: 84px;
+  font-size: 64px;
   font-weight: bold;
-  margin-bottom: 40px;
+  margin-top: 20%;
   line-height: 1;
   text-shadow: 3px 4px 4px rgba(255, 255, 255, 0.8);
   opacity: 0;
   animation: animate 0.9s ease-in-out 0.2s 1 forwards;
 }
 
-.content .des {
+.item .des {
   background: transparent;
-  margin-top: 10px;
+  color: white;
+  margin-top: 40px;
+  max-width: 500px;
   margin-bottom: 50px;
   line-height: 1.8;
   font-size: 18px;
+  line-height: 1.4;
+  white-space: normal;
+  word-wrap: break-word;
   margin-left: 5px;
   opacity: 0;
   animation: animate 0.9s ease-in-out 0.4s 1 forwards;
 }
 
-.content .btn {
+.item .btn {
   margin-left: -10px;
   opacity: 0;
   border: none;
+  background: transparent;
   animation: animate 0.9s ease-in-out 0.8s 1 forwards;
 }
 
-.content .btn button {
+.item .btn button {
   border-radius: 15px;
   padding: 10px 20px;
   border: none;
@@ -131,7 +121,8 @@
   border: 2px solid white;
 }
 
-.content .btn button:nth-child(1) {
+.item .btn button:nth-child(2),
+.item .btn button:nth-child(1) {
   margin-right: 25px;
   background: transparent;
   color: rgb(99, 255, 27);
@@ -139,19 +130,14 @@
   transition: 0.3s;
 }
 
-.content .btn button:nth-child(2) {
-  background: transparent;
-  color: rgb(99, 255, 27);
-  border: 2px solid white;
-  transition: 0.3s;
-}
 
-.content .btn button:nth-child(1):hover {
+
+.item .btn button:nth-child(1):hover {
   background-color: rgb(99, 255, 27);
   color: white;
   border-color: rgb(99, 255, 27);
 }
-.content .btn button:nth-child(2):hover {
+.item .btn button:nth-child(2):hover {
   background-color: rgb(99, 255, 27);
   color: white;
   border-color: rgb(99, 255, 27);
@@ -218,29 +204,7 @@
 
 /*--------BOTONES----NEXT-----PREV-----*/
 
-/*--------TIME----RUNING-----*/
 
-.carousel .timeRunning {
-  position: absolute;
-  z-index: 1000;
-  width: 0;
-  height: 4px;
-  background-color: rgb(99, 255, 27);
-  left: 0;
-  top: 0;
-  animation: runningTime 1s linear 1 forwards;
-}
-
-@keyframes runningTime {
-  from {
-    width: 0%;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-/*--------TIME----RUNING-----*/
 
 /*------RESPONSIVE----PAGE----*/
 
@@ -248,16 +212,16 @@
   .item .content {
     left: 50px;
   }
-  .content .name {
+  .item .name {
     font-size: 70px;
   }
-  .content .des {
+  .item .des {
     font-size: 14px;
   }
 }
 
 @media screen and (max-width: 690px) {
-  .item .content {
+  .item  {
     top: 40%;
   }
 
@@ -265,14 +229,14 @@
     font-size: 45px;
   }
 
-  .content .btn {
+  .item .btn {
     display: flex;
     flex-direction: row;
     gap: 3px;
     justify-content: center;
     margin-left: -220px;
   }
-  .content .btn button {
+  .item .btn button {
     text-align: center;
     font-weight: bold;
     width: 70px;

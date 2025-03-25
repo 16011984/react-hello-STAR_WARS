@@ -69,11 +69,12 @@ const CharacterCarousel = () => {
                 >
                     <div className="name">{images[currentIndex].name}</div>
                     <div className="des">{images[currentIndex].description}</div>
-                    <div className="btn">
 
+                    <div className="btn">
                         <button> Add to Favorites </button>
                         <button> Read More </button>
                     </div>
+
                 </div>
 
 
